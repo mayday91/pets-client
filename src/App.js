@@ -2,6 +2,7 @@
 import React, { useState, Fragment } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { v4 as uuid } from 'uuid'
+import ShowPet from './components/pets/PetsShow'
 
 // import AuthenticatedRoute from './components/shared/AuthenticatedRoute'
 import AutoDismissAlert from './components/shared/AutoDismissAlert/AutoDismissAlert'
@@ -67,6 +68,10 @@ const App = () => {
 						<RequireAuth user={user}>
 						<ChangePassword msgAlert={msgAlert} user={user} />
 				</RequireAuth>}
+				/>
+				<Route 
+					path='/pets/:id'
+					element={ <ShowPet /> }
 				/>
 			</Routes>
 			{msgAlerts.map((msgAlert) => (
