@@ -44,5 +44,3 @@ Pet show page will also allow updating and deleting toys.
 |    Route    |   Description   |
 | ----------- | --------------- |
 | /addToy     | new toy page    |
-| /pets/:id   | pet show page   |
-| /addPet     | new pet page    |
